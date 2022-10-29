@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sad Mia - YouTube</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<section class="fullSection">
+			<div class="banndrDiv">
+				<img id="bannerImagesShow" src="images/banner.jpg">
+				<i id="bannerUploadBtn" class="fa-solid fa-camera"></i>
+				<input type="file" id="bannerUpload">
+			</div>
+
+			<div class="channleTitleAndSub">
+				<div class="channleLogoDiv">
+					<img id="logoImagesShow" src="images/logo.jpg">
+					<input type="file" id="logoUpload">
+					<i id="logoUploadBtn" class="fa-solid fa-camera"></i>
+				</div>
+
+				<div class="channleName">
+					<h3>
+						<span title="Sad Mia" id="nameShow">Sad Mia</span>
+						<i id="nameInput" class="fa-solid fa-pen"></i>
+					</h3>
+					<p>
+						<span id="subNumberShow">999</span> Subscribers
+						<i id="subscribeNumberInput" class="fa-solid fa-pen"></i>
+					</p>
+				</div>
+
+				<div class="subscribe">
+					<div class="subscribeBtn">
+						<p>Subscribe</p>
+					</div>
+					<i id="bellIcon" class="fa-regular fa-bell subBell"></i>
+					<ul class="bellSelect">
+						<li>
+							<i class="fa-sharp fa-solid fa-bell"></i>
+							<span>All</span>
+						</li>
+						<li>
+							<i class="fa-regular fa-bell"></i> 
+							<span>Personalized</span>
+						</li>
+						<li>
+							<i class="fa-regular fa-bell-slash"></i> 
+							<span>None</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="navBar">
+				<ul>
+					<li title="Home">Home</li>
+					<li title="Video">Video</li>
+					<li title="Playlists">Playlists</li>
+					<li title="Community">Community</li>
+					<li title="Channels">Channels</li>
+					<li title="About">About</li>
+					<li id="videoUploadBtn" title="Video Upload">
+						<i class="fa-solid fa-cloud-arrow-up"></i>
+					</li>
+				</ul>
+			</div>
+
+			<section class="videoSection">
+
+				<!-- <div class="video">
+					<div class="videoOrImages">
+						<video>
+							<source src="video/video.mp4" type="video/mp4">
+							<source src="video/video.ogg" type="video/ogg">
+						</video>
+
+						<img src="images/poster.jpg">
+
+						<span>10:33</span>
+					</div>
+					<h1>Coll Screen Design HTML CSS And JavaScript</h1>
+					<p>
+						<span>35</span> views | 
+						<span>2 days</span>  ago
+					</p>
+				</div> -->
+				
+			</section>
+
+		</section>
+
+
+		<section class="videoUploadSection">
+			<div class="videoUploadDiv">
+				<div class="UploadVideoBtn">
+					<i class="fa-solid fa-cloud-arrow-up"></i>
+					<input type="file" id="videoUpload">
+					<p id="videoUploadWarning">video Uploaded!</p>
+				</div>
+
+				<input class="titleInput" type="text" placeholder="Video Title">
+
+				<div class="imagesBanner" style="display: none;">
+					<p>Images</p>
+					<input type="file" id="bannderUpload">
+					<span id="imagesUploadWarning">Image Uploaded!</span>
+				</div>
+
+				<button class="uploadBtn">Upload</button>
+			</div>
+		</section>
+
+	<script src="js/castom.js"></script>
+	</body>
+</html>

@@ -1,0 +1,555 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: arial;
+}
+
+.fullSection {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.banndrDiv {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.banndrDiv img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banndrDiv i {
+	position: absolute;
+	content: "";
+	right: 30px;
+	top: 30px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 18px;
+	background: #3338;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 38px;
+	display: none;
+}
+
+.banndrDiv:hover i {
+	display: block;
+}
+#bannerUpload {
+	visibility: hidden;
+}
+
+.channleTitleAndSub {
+	width: 100%;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.channleLogoDiv {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #3335;
+	position: relative;
+}
+
+.channleLogoDiv img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.channleLogoDiv i {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 90px;
+	font-size: 30px;
+	color: #fff;
+	background: #3335;
+	display: none;
+}
+.channleLogoDiv:hover i {
+	display: block;
+}
+
+.channleName {
+	position: absolute;
+	content: "";
+	left: 140px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.channleName h3 {
+	font-size: 25px;
+	color: #333;
+	font-weight: 400;
+}
+.channleName h3 i {
+	font-size: 16px;
+	visibility: hidden;
+	cursor: pointer;
+}
+.channleName h3:hover i {
+	visibility: visible;
+}
+
+.channleName p {
+	font-size: 15px;
+	color: #333;
+}
+
+.channleName p i {
+	font-size: 16px;
+	visibility: hidden;
+	cursor: pointer;
+}
+.channleName p:hover i {
+	visibility: visible;
+}
+
+.subscribe {
+	position: absolute;
+	content: "";
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.subscribeBtn {
+	width: 100px;
+	height: 40px;
+	border-radius: 25px;
+	background: red;
+	position: relative;
+	cursor: pointer;
+}
+
+.subscribeBtn p {
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 40px;
+	text-align: center;
+}
+
+.subscribe .subBell {
+	width: 30px;
+	height:30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	color: #fff;
+	background: #3338;
+	border-radius: 50%;
+	position: absolute;
+	content: "";
+	left: 110px;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+
+.bellSelect {
+	width: 130px;
+	padding-bottom: 0px;
+	margin: 0;
+	position: absolute;
+	content: "";
+	left: 0px;
+	cursor: pointer;
+	top: 215%;
+	transform: translateY(-50%);
+	background: #333;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 5px;
+	display: none;
+}
+.bellSelect li {
+	list-style: none;
+	padding: 5px;
+	font-size: 13px;
+	color: #fff;
+}
+.bellSelect li span {
+	margin-left: 5px;
+}
+.bellSelect li:hover {
+	background: #fff3;
+}
+
+.navBar {
+	width: 100%;
+	border-bottom: 1px solid #3335;
+}
+.navBar ul {
+	width: 94%;
+	margin-left: 3%;
+	margin: 0;
+	padding-bottom: 0;
+}
+.navBar ul li {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+	font-weight: 500;
+	border-bottom: 2px solid #fff;
+	text-transform: uppercase;
+}
+.navBar ul li:last-child {
+	border: 1px solid #333;
+	border-radius: 15px;
+	background: #333;
+	color: #fff;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.navBar ul li:nth-child(2) {
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+
+.videoSection {
+	width: 100%;
+	padding: 15px 0px;
+}
+
+.video {
+	width: 23%;
+	margin: 10px 8px;
+	box-sizing: border-box;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.videoOrImages {
+	width: 100%;
+	height: 135px;
+	background: #333;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.videoOrImages span {
+	position: absolute;
+	content: "";
+	right: 5px;
+	bottom: 5px;
+	padding: 3px;
+	border-radius: 3px;
+	background: #333;
+	color: #fff;
+	font-size: 10px;
+}
+
+.videoOrImages video {
+	width: 100%;
+	height: 100%;
+}
+
+.videoOrImages img {
+	width: 100%;
+	height: 100%;
+}
+
+.video h1 {
+	font-size: 13px;
+	color: #333;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.video p {
+	font-size: 11px;
+	color: #333;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+#logoUpload {
+	visibility: hidden;
+}
+
+
+
+
+/******************************************/
+
+
+
+.videoUploadSection {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.videoUploadDiv {
+	width: 500px;
+	margin: 150px auto;
+	border: 1px solid #3335;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.UploadVideoBtn {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #3335;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+}
+.UploadVideoBtn i {
+	font-size: 40px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 100px;
+}
+
+.UploadVideoBtn input {
+	visibility: hidden;
+	width: 0px;
+}
+
+.UploadVideoBtn:hover {
+	border: 1px solid #333;
+}
+
+.UploadVideoBtn p {
+	width: 200px;
+	position: absolute;
+	content: "";
+	font-size: 18px;
+	color: green;
+	left: 125px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+.titleInput {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #3335;
+	box-sizing: border-box;
+	margin-top: 20px;
+	outline: none;
+	font-size: 16px;
+}
+
+.titleInput:hover {
+	border: 1px solid #333;
+}
+
+.imagesBanner {
+	width: 100px;
+	height: 35px;
+	border: 1px solid #3335;
+	margin-top: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+}
+.imagesBanner p {
+	width: 100%;
+	line-height: 35px;
+	text-align: center;
+}
+
+.imagesBanner input {
+	width: 0px;
+	visibility: hidden;
+}
+.imagesBanner:hover {
+	border: 1px solid #333;
+}
+
+.imagesBanner span {
+	width: 200px;
+	position: absolute;
+	content: "";
+	font-size: 18px;
+	color: green;
+	left: 125px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+
+
+.uploadBtn {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	background: #333;
+	font-size: 16px; 
+	border: none;
+}
+.uploadBtn:active {
+	background: #000;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  	.videoOrImages {
+		height: 155px;
+	}
+	.video h1 {
+	    font-size: 16.5px;
+	}
+	.video p {
+    	font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+  	.video {
+		width: 30%;
+		margin: 10px 8px;
+	}
+	.videoOrImages {
+		height: 140px;
+	}
+	.video h1 {
+	    font-size: 14px;
+	}
+	.video p {
+    	font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+	.channleLogoDiv {
+		width: 80px;
+		height: 80px;
+	}
+   .channleName h3 {
+		font-size: 20px;
+	}
+	.channleName p {
+		font-size: 12px;
+	}
+	.subscribeBtn {
+		width: 90px;
+		height: 35px;
+	}
+
+	.subscribeBtn p {
+		font-size: 13px;
+		line-height: 35px;
+	}
+	.navBar ul li {
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+	.video {
+		width: 30%;
+		margin: 10px 8px;
+	}
+	.videoOrImages {
+		height: 105px;
+	}
+	.video h1 {
+	    font-size: 12px;
+	}
+	.video p {
+    	font-size: 11px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+  /*.channleLogoDiv {
+		width: 80px;
+		height: 80px;
+	}
+   .channleName h3 {
+		font-size: 20px;
+	}
+	.channleName p {
+		font-size: 12px;
+	}*/
+	/*.subscribeBtn {
+		width: 90px;
+		height: 35px;
+	}*/
+
+	/*.subscribeBtn p {
+		font-size: 13px;
+		line-height: 35px;
+	}*/
+	
+	.navBar ul li:nth-child(1),
+	.navBar ul li:nth-child(3),
+	.navBar ul li:nth-child(4),
+	.navBar ul li:nth-child(5),
+	.navBar ul li:nth-child(6) {
+		display: none;
+	}
+	.video {
+		width: 46%;
+	}
+	.videoOrImages {
+		height: 130px;
+	}
+	.video h1 {
+	    font-size: 14px;
+	}
+	.video p {
+    	font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+	
+
+	.video {
+		width: 96%;
+	}
+	.videoOrImages {
+		height: 220px;
+	}
+	.video h1 {
+	    font-size: 20px;
+	}
+	.video p {
+    	font-size: 14px;
+    }
+}
